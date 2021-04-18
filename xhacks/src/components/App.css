@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  background: linear-gradient(180deg, #266efa 0%, #1555d1 100%);
+  min-height: 100vh;
+}
