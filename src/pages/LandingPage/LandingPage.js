@@ -1,24 +1,24 @@
 import React from 'react';
 import './landingpage.css';
-import logo from './Assets/logo.svg';
-import logo1 from './Assets/logo1.svg';
-import logo2 from './Assets/logo2.svg';
-import logo3 from './Assets/logo3.svg';
-import logo4 from './Assets/logo4.svg';
-import main from './Assets/main.svg';
-import side1 from './Assets/side1.svg';
-import side2 from './Assets/side2.svg';
-import last1 from './Assets/last1.svg';
-import last2 from './Assets/last2.svg';
-import icon1 from './Assets/icon1.svg';
-import icon2 from './Assets/icon2.svg';
-import icon3 from './Assets/icon3.svg';
-import icon4 from './Assets/icon4.svg';
-import icon5 from './Assets/icon5.svg';
-import icon6 from './Assets/icon6.svg';
-import icon7 from './Assets/icon7.svg';
-import icon8 from './Assets/icon8.svg';
-import icon9 from './Assets/icon9.svg';
+import logo from './assets/logo.svg';
+import logo1 from './assets/logo1.svg';
+import logo2 from './assets/logo2.svg';
+import logo3 from './assets/logo3.svg';
+import logo4 from './assets/logo4.svg';
+import main from './assets/main.svg';
+import side1 from './assets/side1.svg';
+import side2 from './assets/side2.svg';
+import last1 from './assets/last1.svg';
+import last2 from './assets/last2.svg';
+import icon1 from './assets/icon1.svg';
+import icon2 from './assets/icon2.svg';
+import icon3 from './assets/icon3.svg';
+import icon4 from './assets/icon4.svg';
+import icon5 from './assets/icon5.svg';
+import icon6 from './assets/icon6.svg';
+import icon7 from './assets/icon7.svg';
+import icon8 from './assets/icon8.svg';
+import icon9 from './assets/icon9.svg';
 
 const LandingPage = () => {
     return (
