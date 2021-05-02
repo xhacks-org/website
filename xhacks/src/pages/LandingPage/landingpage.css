@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
 :root {
   font-size: 10px;
 }
@@ -29,8 +31,8 @@ a {
 }
 
 .navbar__item {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 1.4rem;
   font-family: "Rock Salt", cursive;
 
@@ -93,11 +95,11 @@ a {
 }
 
 .landingcontent__sub {
-  font-family: "Rock Salt", cursive;
+  font-family: "New Tegomin", serif;
 
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 26px;
   color: #ffffff;
   width: 45%;
@@ -114,9 +116,28 @@ a {
   color: #ffffff;
   border: none;
   margin-right: 40px;
+  margin-top: 80px;
 }
 
 .landingreg__btn span {
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin: 4px;
+}
+
+.landingdisc__btn {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  font-family: "Rock Salt", cursive;
+
+  font-weight: 500;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  margin-right: 40px;
+}
+
+.landingdisc__btn span {
   font-size: 2.8rem;
   font-weight: 100;
   margin: 4px;
@@ -139,4 +160,259 @@ a {
   font-size: 2.8rem;
   font-weight: 100;
   margin: 4px;
+}
+
+.landingmission {
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.landingmission__top {
+  text-align: center;
+  display: flex;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.landingmission__header {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 26px;
+  color: #ffffff;
+  width: 30%;
+  margin: auto;
+  margin-top: -15px;
+}
+
+.landingmission__text {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.landingmission__last1 {
+  margin-right: 140px;
+  margin-left: -80px;
+  margin-top: 20px;
+}
+
+.landingmission__last2 {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.landingtrack {
+  width: 100%;
+  height: 150vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.landingtrack__header {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.landingtrack__sub {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.landingtrack__tracks {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-top: 100px;
+}
+
+.track {
+  width: 20%;
+  margin: auto;
+}
+
+.track__header {
+  font-family: "New Tegomin", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.track__details {
+  font-family: "Rock Salt", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.landingfaq {
+  width: 100%;
+  height: 130vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.landingfaq__header {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.landingfaq__questions {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  margin-top: 100px;
+}
+
+.question {
+  width: 32%;
+  text-align: left;
+  margin: auto;
+}
+
+.question__header {
+  font-family: "New Tegomin", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.question__details {
+  font-family: "Rock Salt", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.landingsponsors {
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.landingsponsors__header {
+  font-family: "New Tegomin", serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.landingsponsors__sub {
+  font-family: "Rock Salt", cursive;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.footer__text {
+  font-family: "Rock Salt", cursive;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background: #1555d1;
+}
+
+.footer__left {
+  flex: 1;
+  min-height: 6vh;
+  margin-top: 2vh;
+}
+
+.footer__middle {
+  flex: 1;
+  min-height: 6vh;
+  margin-top: 2vh;
+}
+
+.footer__right {
+  flex: 1;
+  min-height: 6vh;
+  margin-left: 20px;
+  margin-top: 2vh;
+}
+
+.footer__logo {
+  margin-left: 25px;
+  margin-right: 20px;
 }
