@@ -20,8 +20,18 @@ import icon7 from './assets/icon7.svg';
 import icon8 from './assets/icon8.svg';
 import icon9 from './assets/icon9.svg';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    hover:{
+        textShadow: "5px 5px 6px rgba(0, 0, 0, 0.35)",
+        cursor: "pointer"
+    }
+}))
+
 
 const LandingPage = () => {
+    const classes = useStyles();
     return (
 
         <div>
