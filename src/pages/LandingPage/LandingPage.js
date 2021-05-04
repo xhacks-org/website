@@ -20,8 +20,18 @@ import icon7 from './assets/icon7.svg';
 import icon8 from './assets/icon8.svg';
 import icon9 from './assets/icon9.svg';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    hover:{
+        textShadow: "5px 5px 6px rgba(0, 0, 0, 0.35)",
+        cursor: "pointer"
+    }
+}))
+
 
 const LandingPage = () => {
+    const classes = useStyles();
     return (
 
         <div>
@@ -179,22 +189,15 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className='footer__section'>
+          
                 <div className='footer'>
-                    <div className='footer__left'>
                         <a href='https://fonts.google.com/' className='footer__text'>support@xhacks.ca</a>
-                    </div>
-                    <div className='footer__middle'>
                         <h2 className='footer__text'>XHACKS 2021</h2>
-                    </div>
-                    <div className='footer__right'>
                         <a href='https://fonts.google.com/'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo2} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo3} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo4} alt='Footer Logo' className='footer__logo'/></a>
-                    </div>
                 </div>
-            </section>
         </div>
         
     );
