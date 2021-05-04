@@ -19,25 +19,30 @@ import icon6 from './assets/icon6.svg';
 import icon7 from './assets/icon7.svg';
 import icon8 from './assets/icon8.svg';
 import icon9 from './assets/icon9.svg';
+import Grid from '@material-ui/core/Grid';
 
 const LandingPage = () => {
     return (
 
         <div>
+            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
             <section className='navbar__section'>
                 <div className='navbar'>
-                    <div className='navbar__left'>
+                    {/* <div className='navbar__left'> */}
                         <img src={logo} alt='Logo' className='navbar__logo'/>
                         <a href='https://fonts.google.com/' className='navbar__item'>About</a>
                         <a href='https://fonts.google.com/' className='navbar__item'>Tracks</a>
                         <a href='https://fonts.google.com/' className='navbar__item'>Sponsors</a>
                         <a href='https://fonts.google.com/' className='navbar__item'>Devpost</a>
                         <a href='https://fonts.google.com/' className='navbar__item'>Discord</a>
-                    </div>
-                    <div className='navbar__right'>
+                    {/* </div> */}
+                    {/* <div className='navbar__right'> */}
                         {/* <button className='btn__reg'><span>[ </span> Register<span> ]</span></button>
                         <button className='btn__us'><span>[ </span> Sponsor Us<span> ]</span></button> */}
-                    </div>
+                    {/* </div> */}
                 </div>
             </section>
             <section className='landingcontent__section'>
@@ -46,9 +51,9 @@ const LandingPage = () => {
                         <img src={main} alt='Main' className='landingcontent__img'/>
                         <h3 className='landingcontent__sub'>Join us from August 15 - 17, 2021 for a weekend filled with technology, learning and prizes for everyone.</h3>
                         <div className='landingcontent__buttons'>
-                            <button className='landingdisc__btn'><span>[ </span> Discord <span> ]</span></button>
+                            <button className='landingreg__btn'><span>[ </span> Discord <span> ]</span></button>
                             <button className='landingreg__btn'><span>[ </span> Register <span> ]</span></button>
-                            <button className='landingus__btn'><span>[ </span> Sponsor Us <span> ]</span></button>
+                            <button className='landingreg__btn'><span>[ </span> Sponsor Us <span> ]</span></button>
                         </div>
                     </div>
                 </div>
@@ -57,9 +62,9 @@ const LandingPage = () => {
             <section className='landingmission__section'>
                 <div className='landingmission'>
                     <div className='landingmission__top'>
-                    <img src={side1} alt='Sideimg1' className='landingmission__side1'/>
+                    <img src={side1} alt='Sideimg1' className='landingmission__side'/>
                     <h3 className='landingmission__header'>Our Mission</h3>
-                    <img src={side2} alt='Sideimg2' className='landingmission__side2'/>
+                    <img src={side2} alt='Sideimg2' className='landingmission__side'/>
                     </div>
                     <div className='landingmission__middle'>
                         <h6 className='landingmission__text'>Let’s be honest. Hackathons are great. But as all great things, we think that they can be improved even further. As avid hackers ourselves, we’ve been to many hackathons and we’ve noticed one common trend - after the hackathon, most projects get abandoned and during the hackathon, most projects are made simply for prizes. <br/><br/> That’s why we made XHacks. It’s the first hackathon with a promise for all hackers - We’ll try our very best to ensure that you leave XHacks with a proper product that can be used by real people.</h6>
@@ -77,57 +82,53 @@ const LandingPage = () => {
                         <h2 className='landingtrack__header'>Our Tracks</h2>
                         <h4 className='landingtrack__sub'>Check out our NINE tracks below. We've got something for everyone</h4>
                     </div>
-                    <div className='landingtrack__tracks'>
-                        <div className='track'>
+                    <Grid container spacing={2} style={{width: "80%",marginLeft: "10%"}}>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon1} alt='icon1' className='trackicon'/>
                             <h2 className='track__header'>Scale Track</h2>
                             <h4 className='track__details'>Improve existing projects and get judged based on the evel of improvements made.</h4>
-                        </div>
-                        <div className='track'>
+                        </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon2} alt='icon2' className='trackicon'/>
                             <h2 className='track__header'>Veteran Track</h2>
                             <h4 className='track__details'>Submit a technically complex and impressive project as a hackathon-veteran.</h4>
-                        </div>
-                        <div className='track'>
+                        </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon3} alt='icon3' className='trackicon'/>
                             <h2 className='track__header'>Rookie Track</h2>
                             <h4 className='track__details'>For beginner developers that have only gone to two hackathons or less. </h4>
-                        </div>
-                    </div>
-                    <div className='landingtrack__tracks'>
-                        <div className='track'>
+                        </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon4} alt='icon4' className='trackicon'/>
                             <h2 className='track__header'>Solo Track</h2>
                             <h4 className='track__details'>For Solo developers since making a project by yourself is tough, but rewarding!</h4>
-                        </div>
-                        <div className='track'>
+                        </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon5} alt='icon5' className='trackicon'/>
                             <h2 className='track__header'>Crowdsource Track</h2>
                             <h4 className='track__details'>If you use consumer-sourced data to build a prooduct, you’re eligible</h4>
-                        </div>
-                        <div className='track'>
+                            </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon6} alt='icon6' className='trackicon'/>
                             <h2 className='track__header'>Idea Track</h2>
                             <h4 className='track__details'>Submit only a design prototype and idea to get judged. No coding necessary!</h4>
-                        </div>
-                    </div>
-                    <div className='landingtrack__tracks'>
-                        <div className='track'>
+                            </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon7} alt='icon7' className='trackicon'/>
                             <h2 className='track__header'>Open Source Track</h2>
                             <h4 className='track__details'>Submit any project that’s available for other developers to utilize.</h4>
-                        </div>
-                        <div className='track'>
+                            </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon8} alt='icon8' className='trackicon'/>
                             <h2 className='track__header'>Startup Track</h2>
                             <h4 className='track__details'>Submit a product and get judged based on market-fit and startup-readiness.</h4>
-                        </div>
-                        <div className='track'>
+                            </Grid>
+                        <Grid item xs={12} sm={4} className='track'>
                             <img src={icon9} alt='icon9' className='trackicon'/>
                             <h2 className='track__header'>Overall Track</h2>
                             <h4 className='track__details'>THe standard First, Second and Third place tracks. All projects are eligible!</h4>
-                        </div>
-                    </div>
+                            </Grid>
+                    </Grid>
                 </div>
             </section>
 

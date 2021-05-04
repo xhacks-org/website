@@ -32,7 +32,7 @@ a {
   width: 100%;
   height: 16vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .navbar__left {
@@ -42,14 +42,20 @@ a {
 }
 
 .navbar__logo {
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  width: 4vw;
+  height: 4vw;
+
 }
 
 .navbar__item {
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 1.4rem;
-  font-family: "Rock Salt", cursive;
+  margin-top: 25px;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 1.2vw;
+  font-family: "Rock Salt";
 
   font-weight: 500;
   color: #ffffff;
@@ -65,7 +71,7 @@ a {
   margin-left: 20px;
   margin-right: 10px;
   font-size: 1.4rem;
-  font-family: "Rock Salt", cursive;
+  font-family: "Rock Salt";
 
   font-weight: 500;
   color: #ffffff;
@@ -106,30 +112,38 @@ a {
 }
 
 .landingcontent__img {
-  margin-bottom: 3vh;
+  width: 70vw;
 }
 
 .landingcontent__sub {
-  font-family: "SF Pro Display";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 30px;
   color: #ffffff;
-  width: 45%;
+  width: 55%;
   margin: auto;
+  margin-top: 50px;
 }
+
+.landingcontent__button{
+  display: flex;
+  justify-content: center;
+}
+
 
 .landingreg__btn {
   margin-top: 40px;
-  font-size: 2.4rem;
+  font-size: 2.1vw;
   font-family: "Rock Salt", cursive;
 
   font-weight: 500;
   background: transparent;
   color: #ffffff;
   border: none;
-  margin-right: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 80px;
 }
 
@@ -139,7 +153,7 @@ a {
   margin: 4px;
 }
 
-.landingdisc__btn {
+/* .landingdisc__btn {
   margin-top: 40px;
   font-size: 2.4rem;
   font-family: "Rock Salt", cursive;
@@ -149,7 +163,7 @@ a {
   color: #ffffff;
   border: none;
   margin-right: 40px;
-}
+} */
 
 .landingdisc__btn span {
   font-size: 2.8rem;
@@ -157,7 +171,7 @@ a {
   margin: 4px;
 }
 
-.landingus__btn {
+/* .landingus__btn {
   margin-top: 40px;
   font-size: 2.4rem;
   font-family: "Rock Salt", cursive;
@@ -168,7 +182,7 @@ a {
   border: none;
 
   margin-left: 40px;
-}
+} */
 
 .landingus__btn span {
   font-size: 2.8rem;
@@ -192,15 +206,18 @@ a {
 }
 
 .landingmission__header {
-  font-family: "SF Pro Display";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: normal;
+  font-size: 3vw;
   line-height: 26px;
   color: #ffffff;
-  width: 30%;
   margin: auto;
   margin-top: -15px;
+}
+
+.landingmission__side{
+  width: 15vw;
 }
 
 .landingmission__text {
@@ -215,21 +232,28 @@ a {
   margin: auto;
   margin-top: 20px;
 }
+@media only screen and (max-width: 800px) {
+  .landingmission__text {
+    font-size: 15px;
+  }
+}
+
 
 .landingmission__last1 {
   margin-right: 140px;
-  margin-left: -80px;
+  margin-left: -10px;
   margin-top: 20px;
+  width: 25vw;
 }
 
 .landingmission__last2 {
   margin-left: 60px;
   margin-top: 20px;
+  width: 15vw;
 }
 
 .landingtrack {
   width: 100%;
-  height: 150vh;
   align-items: center;
   text-align: center;
   padding-top: 20vh;
@@ -261,8 +285,6 @@ a {
 }
 
 .landingtrack__tracks {
-  display: flex;
-  margin: auto;
   width: 90%;
   margin-top: 100px;
 }
@@ -280,7 +302,7 @@ a {
   line-height: 26px;
   color: #ffffff;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 15px;
 }
 
@@ -292,7 +314,13 @@ a {
   line-height: 26px;
   color: #ffffff;
   margin: auto;
+  width: 80%;
   margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.landingfaq__section{
+  position: relative;
 }
 
 .landingfaq {
