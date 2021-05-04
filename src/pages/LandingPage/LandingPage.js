@@ -189,22 +189,15 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className='footer__section'>
+          
                 <div className='footer'>
-                    <div className='footer__left'>
                         <a href='https://fonts.google.com/' className='footer__text'>support@xhacks.ca</a>
-                    </div>
-                    <div className='footer__middle'>
                         <h2 className='footer__text'>XHACKS 2021</h2>
-                    </div>
-                    <div className='footer__right'>
                         <a href='https://fonts.google.com/'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo2} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo3} alt='Footer Logo' className='footer__logo'/></a>
                         <a href='https://fonts.google.com/'><img src={logo4} alt='Footer Logo' className='footer__logo'/></a>
-                    </div>
                 </div>
-            </section>
         </div>
         
     );
