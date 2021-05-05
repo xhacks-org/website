@@ -191,13 +191,13 @@ const LandingPage = () => {
 
           
                 <div className='footer'>
-                    <div style={{marginRight: "18%", marginTop: "15px"}}>
+                    <div style={{marginRight: "18%", marginTop: "25px"}}>
                         <a href='https://fonts.google.com/' className='footer__text'>support@xhacks.ca</a>
                     </div>
-                    <div style={{marginRight: "18%", marginTop: "15px"}}>
-                        <h2 className='footer__text'>XHACKS 2021</h2>
+                    <div style={{marginRight: "18%", marginTop: "25px"}}>
+                        <h2 className='footer__text2'>XHACKS 2021</h2>
                         </div>
-                        <div style={{display:"flex", justifyContent:"space-between", width: "20%"}}>
+                        <div style={{display:"flex", justifyContent:"space-between", width: "14%", marginTop: "15px"}}>
                             <div>
                             <a href='https://fonts.google.com/'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
                             </div>

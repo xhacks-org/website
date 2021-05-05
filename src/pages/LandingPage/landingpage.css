@@ -47,8 +47,7 @@ a {
   margin-top: 20px;
   width: 4vw;
   height: 4vw;
-  cursor: pointer
-
+  cursor: pointer;
 }
 
 .navbar__item {
@@ -62,7 +61,7 @@ a {
   color: #ffffff;
 }
 
-.navbar__item:hover{
+.navbar__item:hover {
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
@@ -133,11 +132,10 @@ a {
   margin-top: 50px;
 }
 
-.landingcontent__button{
+.landingcontent__button {
   display: flex;
   justify-content: center;
 }
-
 
 .landingreg__btn {
   margin-top: 40px;
@@ -152,13 +150,13 @@ a {
   margin-right: 25px;
   margin-top: 80px;
 }
-.landingreg__btn:hover{
+.landingreg__btn:hover {
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
 .landingreg__btn span {
-  font-size: 2.8rem;
+  font-size: 2.8vw;
   font-weight: 100;
   margin: 4px;
 }
@@ -176,7 +174,7 @@ a {
 } */
 
 .landingdisc__btn span {
-  font-size: 2.8rem;
+  font-size: 2.8vw;
   font-weight: 100;
   margin: 4px;
 }
@@ -195,7 +193,7 @@ a {
 } */
 
 .landingus__btn span {
-  font-size: 2.8rem;
+  font-size: 2.8vw;
   font-weight: 100;
   margin: 4px;
 }
@@ -226,7 +224,7 @@ a {
   margin-top: -15px;
 }
 
-.landingmission__side{
+.landingmission__side {
   width: 15vw;
 }
 
@@ -234,7 +232,7 @@ a {
   font-family: "SF Pro Display";
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
@@ -247,7 +245,6 @@ a {
     font-size: 15px;
   }
 }
-
 
 .landingmission__last1 {
   margin-right: 140px;
@@ -330,7 +327,7 @@ a {
   margin-top: 20px;
 }
 
-.landingfaq__section{
+.landingfaq__section {
   position: relative;
 }
 
@@ -379,7 +376,7 @@ a {
 }
 
 .question__details {
-  font-family: "Rock Salt", cursive;
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -422,11 +419,24 @@ a {
 }
 
 .footer__text {
+  font-family: "SF Pro Display";
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.6vw;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.footer__text2 {
   font-family: "Rock Salt", cursive;
 
   font-style: normal;
-  font-weight: normal;
-  font-size: 1.6vw;
+  font-weight: 800;
+  font-size: 1.4vw;
   line-height: 26px;
   color: #ffffff;
   margin: auto;
@@ -439,8 +449,9 @@ a {
   background: #1555d1;
   display: flex;
   justify-content: center;
+  height: 12vh;
+  margin-top: 150px;
 }
-
 
 .footer__logo {
   margin-top: 18px;
