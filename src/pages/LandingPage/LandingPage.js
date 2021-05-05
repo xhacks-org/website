@@ -1,5 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './landingpage.css';
+import landing from './assets/landing.svg';
+import landingSmall from './assets/mainSmall.svg';
+import discHover from './assets/discHover.svg';
+import registerHoverImg from './assets/registerHover.svg';
+import sponsorHoverImg from './assets/sponsorHover.svg';
+import disc from './assets/disc.svg';
+import register from './assets/register.svg';
+import sponsorus from './assets/sponsorus.svg';
 import logo from './assets/logo.svg';
 import logo1 from './assets/logo1.svg';
 import logo2 from './assets/logo2.svg';
@@ -32,9 +40,17 @@ const useStyles = makeStyles((theme) => ({
 
 const LandingPage = () => {
     const classes = useStyles();
+    const [discordHover, setDiscHover] = useState(false);
+    const [registerHover, setRegisterHover] = useState(false);
+    const [sponsorHover, setSponsorHover] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.screen.width);
+
+    window.addEventListener('resize', () => setScreenWidth(window.screen.width));
+    const mainImg = (screenWidth < 959) ? landingSmall : landing;
+
     return (
 
-        <div>
+        <div className='app-container'>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></link>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
@@ -57,24 +73,23 @@ const LandingPage = () => {
             </section>
             <section className='landingcontent__section'>
                 <div className='landingcontent'>
-                    <div className='landingcontent__text'>
-                        <img src={main} alt='Main' className='landingcontent__img'/>
-                        <h3 className='landingcontent__sub'>Join us from August 15 - 17, 2021 for a weekend filled with technology, learning and prizes for everyone.</h3>
-                        <div className='landingcontent__buttons'>
-                            <button className='landingreg__btn'><span>[ </span> Discord <span> ]</span></button>
-                            <button className='landingreg__btn'><span>[ </span> Register <span> ]</span></button>
-                            <button className='landingreg__btn'><span>[ </span> Sponsor Us <span> ]</span></button>
-                        </div>
+                    <img className='landingcontent-main' alt='main' src={mainImg} draggable='false' />
+                    <h3 className='landingcontent__sub'>Join us from August 15 - 17, 2021 for a weekend filled with technology, learning and prizes for everyone.</h3>
+                    <div className='landingcontent__buttons'>
+                        <img className='discord-btn' src={(discordHover) ? discHover : disc} alt='discord' onMouseOut={() => setDiscHover(false)} onMouseOver={() => setDiscHover(true)} onClick={() => window.open('https://discord.com')} />
+                        <img className='register-btn' src={(registerHover) ? registerHoverImg : register} alt='register' onMouseOut={() => setRegisterHover(false)} onMouseOver={() => setRegisterHover(true)} />
+                        <img className='sponsor-btn' src={(sponsorHover) ? sponsorHoverImg : sponsorus} alt='sponsor us' onMouseOut={() => setSponsorHover(false)} onMouseOver={() => setSponsorHover(true)} />
                     </div>
+                    <img className='sponsor-btn sponsor-btn--lower' src={(sponsorHover) ? sponsorHoverImg : sponsorus} alt='sponsor us' onMouseOut={() => setSponsorHover(false)} onMouseOver={() => setSponsorHover(true)} />
                 </div>
             </section>
 
             <section className='landingmission__section'>
                 <div className='landingmission'>
                     <div className='landingmission__top'>
-                    <img src={side1} alt='Sideimg1' className='landingmission__side'/>
-                    <h3 className='landingmission__header'>Our Mission</h3>
-                    <img src={side2} alt='Sideimg2' className='landingmission__side'/>
+                        <img src={side1} alt='Sideimg1' className='landingmission__side'/>
+                        <h3 className='landingmission__header'>Our Mission</h3>
+                        <img src={side2} alt='Sideimg2' className='landingmission__side'/>
                     </div>
                     <div className='landingmission__middle'>
                         <h6 className='landingmission__text'>Let’s be honest. Hackathons are great. But as all great things, we think that they can be improved even further. As avid hackers ourselves, we’ve been to many hackathons and we’ve noticed one common trend - after the hackathon, most projects get abandoned and during the hackathon, most projects are made simply for prizes. <br/><br/> That’s why we made XHacks. It’s the first hackathon with a promise for all hackers - We’ll try our very best to ensure that you leave XHacks with a proper product that can be used by real people.</h6>
@@ -90,9 +105,9 @@ const LandingPage = () => {
                 <div className='landingtrack'>
                     <div className='landingtrack__text'>
                         <h2 className='landingtrack__header'>Our Tracks</h2>
-                        <h4 className='landingtrack__sub'>Check out our NINE tracks below. We've got something for everyone</h4>
+                        <h4 className='landingtrack__sub'>Check out our NINE tracks below. We've got something for everyone.</h4>
                     </div>
-                    <Grid container spacing={2} style={{width: "80%",marginLeft: "10%"}}>
+                    <Grid container spacing={2} style={{width: "80%",marginLeft: "10%", marginTop: "86px"}}>
                         <Grid item xs={12} sm={4} className='track'>
                             <img src={icon1} alt='icon1' className='trackicon'/>
                             <h2 className='track__header'>Scale Track</h2>
@@ -143,34 +158,30 @@ const LandingPage = () => {
             </section>
 
             <section className='landingfaq__section'>
+                <h2 className='landingfaq__header'>Frequently Asked Questions</h2>
                 <div className='landingfaq'>
-                    <div className='landingfaq__text'>
-                        <h2 className='landingfaq__header'>Frequently Asked Questions</h2>
-                    </div>
-                    <div className='landingfaq__questions'>
+                    <div className='landingfaq__questions--left'>
                         <div className='question'>
                             <h2 className='question__header'>What is a Hackathon?</h2>
                             <h4 className='question__details'>A hackathon is an event for anyone to come and create anything that their imaginations can dream up!</h4>
                         </div>
                         <div className='question'>
-                            <h2 className='question__header'>Where?When?</h2>
-                            <h4 className='question__details'>Xhacks will be completely online and will be held from August 15 to August 17.</h4>
-                        </div>
-                    </div>
-                    <div className='landingfaq__questions'>
-                        <div className='question'>
                             <h2 className='question__header'>How much does it cost?</h2>
-                            <h4 className='question__details'>Completely free! You might even earn some money through prizes! Thanks to our sponsors, we’re able to provide evertything without cost .</h4>
+                            <h4 className='question__details'>Completely free! You might even earn some money through prizes! Thanks to our sponsors, we’re able to provide evertything without cost.</h4>
                         </div>
-                        <div className='question'>
-                            <h2 className='question__header'>Who can attend?</h2>
-                            <h4 className='question__details'>If you’re some sort of student, you’re eligible. High schoolers, University students and Graduate students are all welcome!</h4>
-                        </div>
-                    </div>
-                    <div className='landingfaq__questions'>
                         <div className='question'>
                             <h2 className='question__header'>What if I don't know code?</h2>
                             <h4 className='question__details'>No problem. We’ve got an IDEA track for non-coders and a rookie track as well as cool workshops if you’re looking to learn!</h4>
+                        </div>
+                    </div>
+                    <div className='landingfaq__questions--right'>
+                        <div className='question'>
+                            <h2 className='question__header'>Where?When?</h2>
+                            <h4 className='question__details'>Xhacks will be completely online and will be held from August 15 to August 17.</h4>
+                        </div>
+                        <div className='question--more'>
+                            <h2 className='question__header'>Who can attend?</h2>
+                            <h4 className='question__details'>If you’re some sort of student, you’re eligible. High schoolers, University students and Graduate students are all welcome!</h4>
                         </div>
                         <div className='question'>
                             <h2 className='question__header'>I have more questions</h2>
@@ -191,13 +202,9 @@ const LandingPage = () => {
 
           
                 <div className='footer'>
-                    <div style={{marginRight: "18%", marginTop: "25px"}}>
-                        <a href='https://fonts.google.com/' className='footer__text'>support@xhacks.ca</a>
-                    </div>
-                    <div style={{marginRight: "18%", marginTop: "25px"}}>
-                        <h2 className='footer__text2'>XHACKS 2021</h2>
-                        </div>
-                        <div style={{display:"flex", justifyContent:"space-between", width: "14%", marginTop: "15px"}}>
+                    <a href='mailto:support@xhacks.ca' className='footer__text'>support@xhacks.ca</a>
+                    <h2 className='footer__text2'>Xhacks 2021 ©</h2>
+                        <div className='footer__social'>
                             <div>
                             <a href='https://fonts.google.com/'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
                             </div>
@@ -205,10 +212,10 @@ const LandingPage = () => {
                             <a href='https://fonts.google.com/'><img src={logo2} alt='Footer Logo' className='footer__logo'/></a>
                             </div>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo3} alt='Footer Logo' style={{marginTop: "21px"}}className='footer__logo'/></a>
+                            <a href='https://fonts.google.com/'><img src={logo3} alt='Footer Logo'className='footer__logo'/></a>
                             </div>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo4} alt='Footer Logo' style={{width: "22px"}}className='footer__logo'/></a>
+                            <a href='https://fonts.google.com/'><img src={logo4} alt='Footer Logo'className='footer__logo'/></a>
                             </div>
                         </div>
                 </div>

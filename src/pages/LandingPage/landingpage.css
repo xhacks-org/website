@@ -28,33 +28,50 @@ a {
   text-decoration: none;
 }
 
-.navbar {
+.app-container {
   width: 100%;
-  height: 16vh;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+}
+
+.navbar__section {
+  width: 100%;
+  text-align: left;
+}
+
+.navbar {
+  margin-top: 42px;
+  width: 740px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 42px;
 }
 
 .navbar__left {
+  margin-top: 42px;
   margin-left: 65px;
   display: flex;
   align-items: center;
 }
 
 .navbar__logo {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 20px;
-  width: 4vw;
-  height: 4vw;
+  width: 47px;
+  height: 48px;
+  margin-right: 70px;
+}
+
+.navbar__logo:hover {
   cursor: pointer;
 }
 
 .navbar__item {
-  margin-top: 25px;
   margin-left: 3%;
   margin-right: 3%;
-  font-size: 1.2vw;
+  font-size: 16px;
   font-family: "Rock Salt";
 
   font-weight: 500;
@@ -62,8 +79,32 @@ a {
 }
 
 .navbar__item:hover {
-  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 790px) {
+  .navbar__item {
+    display: none !important;
+  }
+
+  .navbar {
+    width: 100% !important;
+    margin-left: auto !important;
+    align-self: center;
+    justify-content: center;
+  }
+
+
+  .navbar__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar__logo {
+    margin-right: 0px !important;
+  }
 }
 
 .navbar__right {
@@ -110,21 +151,33 @@ a {
 
 .landingcontent {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landingcontent-main {
+  margin-top: 70px;
+}
+
+.landingcontent__text {
+  width: 100%;
   height: 72vh;
+  display: flex;
   align-items: center;
   text-align: center;
-  padding-top: 12vh;
 }
 
 .landingcontent__img {
   width: 70vw;
 }
 
+
 .landingcontent__sub {
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 300;
-  font-size: 2vw;
+  font-size: 20px;
   line-height: 30px;
   color: #ffffff;
   width: 55%;
@@ -132,9 +185,53 @@ a {
   margin-top: 50px;
 }
 
-.landingcontent__button {
+.landingcontent__buttons {
+  margin-top: 52px;
+  width: 800px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 900px) {
+  .sponsor-btn {
+    display: none;
+  }
+
+  .landingcontent__buttons {
+    width: 480px;
+  }
+
+  .sponsor-btn--lower {
+    display: block !important;
+  }
+}
+
+.discord-btn {
+  width: 237px;
+  height: 68px;
+}
+
+.sponsor-btn {
+  width: 267px;
+  height: 68px;
+}
+
+.discord-btn:hover {
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  cursor: pointer;
+}
+
+.sponsor-btn:hover {
+  cursor: pointer;
+}
+
+.sponsor-btn--lower {
+  display: none;
 }
 
 .landingreg__btn {
@@ -200,49 +297,73 @@ a {
 
 .landingmission {
   width: 100%;
-  height: 70vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 30vh;
+  margin-top: 274px;
 }
 
 .landingmission__top {
   text-align: center;
   display: flex;
-  margin-left: 24%;
-  margin-right: 24%;
+  flex-direction: row;
+  width: 760px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 760px) {
+  .landingmission__top {
+    align-self: center;
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .landingmission__text {
+    margin-top: 60px !important;
+    width: 80% !important;
+  }
 }
 
 .landingmission__header {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 800;
-  font-size: 3vw;
+  font-weight: 900;
+  font-size: 48px;
   line-height: 26px;
   color: #ffffff;
   margin: auto;
-  margin-top: -15px;
 }
 
 .landingmission__side {
-  width: 15vw;
+  width: 204px;
 }
 
 .landingmission__text {
-  font-family: "SF Pro Display";
+  font-family: Inter;
 
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  width: 65%;
+  width: 960px;
   margin: 0 auto;
   margin-top: 20px;
 }
 @media only screen and (max-width: 800px) {
-  .landingmission__text {
-    font-size: 15px;
+  .landingmission__last1 {
+    display: none;
+  }
+
+  .landingmission__last2 {
+    display: none;
+  }
+
+  .landingmission__side {
+    display: none;
   }
 }
 
@@ -250,27 +371,27 @@ a {
   margin-right: 140px;
   margin-left: -10px;
   margin-top: 20px;
-  width: 25vw;
+  width: 295px;
 }
 
 .landingmission__last2 {
   margin-left: 60px;
   margin-top: 20px;
-  width: 15vw;
+  width: 162px;
 }
 
 .landingtrack {
   width: 100%;
   align-items: center;
   text-align: center;
-  padding-top: 20vh;
+  margin-top: 275px;
 }
 
 .landingtrack__header {
-  font-family: "SF Pro Display";
+  font-family: Inter;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 40px;
   line-height: 26px;
   color: #ffffff;
@@ -280,16 +401,15 @@ a {
 }
 
 .landingtrack__sub {
-  font-family: "SF Pro Display";
+  font-family: Inter;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
-  margin: auto;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
+text-align: center;
+color: white;
 }
 
 .landingtrack__tracks {
@@ -298,14 +418,15 @@ a {
 }
 
 .track {
+  margin-top: 20px;
   width: 20%;
   margin: auto;
 }
 
 .track__header {
-  font-family: "SF Pro Display";
+  font-family: Inter;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 24px;
   line-height: 26px;
   color: #ffffff;
@@ -323,26 +444,30 @@ a {
   color: #ffffff;
   margin: auto;
   width: 80%;
-  margin-bottom: 15px;
+  margin-bottom: 55px;
   margin-top: 20px;
 }
 
 .landingfaq__section {
   position: relative;
+  margin-top: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .landingfaq {
-  width: 100%;
+  width: 998px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   text-align: center;
-  padding-top: 20vh;
 }
 
 .landingfaq__header {
-  font-family: "SF Pro Display";
-
+  font-family: Inter;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 40px;
   line-height: 26px;
   color: #ffffff;
@@ -350,23 +475,58 @@ a {
   margin-bottom: 30px;
 }
 
-.landingfaq__questions {
+.landingfaq__questions--left {
   display: flex;
+  flex-direction: column;
   margin: auto;
-  width: 80%;
-  margin-top: 100px;
+  width: 434px;
+}
+
+.landingfaq__questions--right {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 437px;
+}
+
+@media only screen and (max-width: 1010px) {
+  .landingfaq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+  }
+
+  .question {
+    text-align: center !important;
+  }
+
+  .question--more {
+    text-align: center !important;
+  }
+}
+
+.question-left {
+  text-align: left;
+  margin-right: 90px;
 }
 
 .question {
-  width: 32%;
+  padding-top: 78px;
   text-align: left;
-  margin: auto;
+  margin: 0;
+}
+
+.question--more {
+  padding-top: 103px;
+  text-align: left;
+  margin: 0;
 }
 
 .question__header {
-  font-family: "SF Pro Display";
+  font-family: Inter;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 26px;
   line-height: 26px;
   color: #ffffff;
@@ -376,10 +536,10 @@ a {
 }
 
 .question__details {
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 22px;
   line-height: 26px;
   color: #ffffff;
   margin: auto;
@@ -390,14 +550,14 @@ a {
   width: 100%;
   align-items: center;
   text-align: center;
-  padding-top: 20vh;
+  margin-top: 170px;
 }
 
 .landingsponsors__header {
-  font-family: "SF Pro Display";
+  font-family: Inter;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 40px;
   line-height: 28px;
   color: #ffffff;
@@ -419,16 +579,14 @@ a {
 }
 
 .footer__text {
-  font-family: "SF Pro Display";
-
+  margin-left: 39px;
+  font-family: Inter;
+  width: 205px;
   font-style: normal;
   font-weight: 800;
-  font-size: 1.6vw;
+  font-size: 20px;
   line-height: 26px;
   color: #ffffff;
-  margin: auto;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
 }
 
 .footer__text2 {
@@ -436,11 +594,10 @@ a {
 
   font-style: normal;
   font-weight: 800;
-  font-size: 1.4vw;
+  font-size: 20px;
   line-height: 26px;
   color: #ffffff;
   margin: auto;
-  margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
@@ -448,11 +605,46 @@ a {
   width: 100%;
   background: #1555d1;
   display: flex;
-  justify-content: center;
-  height: 12vh;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
   margin-top: 150px;
+  align-items: center;
 }
 
-.footer__logo {
-  margin-top: 18px;
+@media only screen and (max-width: 760px) {
+  .footer__text2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer__text2 {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__text {
+    display: none;
+  }
+
+  .footer__social {
+    margin-right: 0px !important;
+  }
+}
+
+
+
+.footer__social {
+  margin-right: 52px;
+  display: flex;
+  flex-direction: row;
+  width: 186px;
+  align-items: center;
+  justify-content: space-between;
 }
