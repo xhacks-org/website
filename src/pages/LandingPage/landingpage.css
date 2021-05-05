@@ -469,10 +469,10 @@ color: white;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
-  line-height: 26px;
+  line-height: 46px;
   color: #ffffff;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .landingfaq__questions--left {
@@ -487,6 +487,7 @@ color: white;
   flex-direction: column;
   margin: auto;
   width: 437px;
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 1010px) {
@@ -532,6 +533,18 @@ color: white;
   color: #ffffff;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.question__header2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
