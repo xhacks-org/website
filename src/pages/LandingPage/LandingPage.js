@@ -8,6 +8,10 @@ import sponsorHoverImg from './assets/sponsorHover.svg';
 import disc from './assets/disc.svg';
 import register from './assets/register.svg';
 import sponsorus from './assets/sponsorus.svg';
+import emailus from './assets/emailus.svg';
+import emailHoverImg from './assets/emailusHover.svg';
+import sponsorpkg from './assets/sponsorpkg.svg';
+import sponsorpkgHoverImg from './assets/sponsorpkgHoverImg.svg';
 import logo from './assets/logo.svg';
 import logo1 from './assets/logo1.svg';
 import logo2 from './assets/logo2.svg';
@@ -32,6 +36,8 @@ const LandingPage = () => {
     const [discordHover, setDiscHover] = useState(false);
     const [registerHover, setRegisterHover] = useState(false);
     const [sponsorHover, setSponsorHover] = useState(false);
+    const [emailHover, setEmailHover] = useState(false);
+    const [sponsorpkgHover, setSponsorpkgHover] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
     window.addEventListener('resize', () => setScreenWidth(window.screen.width));
@@ -188,6 +194,21 @@ const LandingPage = () => {
                 </div>
             </section>
 
+                <section className='landinginterest__section'>
+                    <div className='landinginterest'>
+                        <div className='landinginterest__top'>
+                            <h3 className='landinginterest__header'>Interested in Sponsoring?</h3>
+                        </div>
+                        <div className='landinginterest__middle'>
+                            <h6 className='landinginterest__text'>XHacks is organized by a group of high school students who’ve been to numerous hackathons and have helped organize over 4 other hackathons. We’re aiming for around 300 hackers this year and we hope to help them all create amazing products that can be used by real people. <br/><br/> If your mission aligns with ours, we’d love for you to be a sponsor, so feel free to send us an email using the link below or check out our sponsorship package!</h6>
+                        </div>
+                        <div className='landinginterest__last'>
+                            <img className='emailus-btn' src={(emailHover) ? emailHoverImg : emailus} alt='email us' onMouseOut={() => setEmailHover(false)} onMouseOver={() => setEmailHover(true)} />
+                            <img className='sponsorpkg-btn' src={(sponsorpkgHover) ? sponsorpkgHoverImg : sponsorpkg} alt='sponsorship pkg' onMouseOut={() => setSponsorpkgHover(false)} onMouseOver={() => setSponsorpkgHover(true)} />
+                        </div>
+                    </div>
+                </section>
+
           
                 <div className='footer'>
                     <a href='mailto:support@xhacks.ca' className='footer__text'>support@xhacks.ca</a>
@@ -207,6 +228,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                 </div>
+
         </div>
         
     );
