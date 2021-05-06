@@ -11,7 +11,7 @@ import sponsorus from './assets/sponsorus.svg';
 import emailus from './assets/emailus.svg';
 import emailHoverImg from './assets/emailusHover.svg';
 import sponsorpkg from './assets/sponsorpkg.svg';
-import sponsorpkgHoverImg from './assets/sponsorpkgHoverImg.svg';
+import sponsorpkgHoverImg from './assets/sponsorpkgHoverImg2.svg';
 import logo from './assets/logo.svg';
 import logo1 from './assets/logo1.svg';
 import logo2 from './assets/logo2.svg';
@@ -53,11 +53,11 @@ const LandingPage = () => {
                 <div className='navbar'>
                     {/* <div className='navbar__left'> */}
                         <img src={logo} alt='Logo' className='navbar__logo'/>
-                        <a href='https://fonts.google.com/' className='navbar__item'>About</a>
-                        <a href='https://fonts.google.com/' className='navbar__item'>Tracks</a>
-                        <a href='https://fonts.google.com/' className='navbar__item'>Sponsors</a>
-                        <a href='https://fonts.google.com/' className='navbar__item'>Devpost</a>
-                        <a href='https://fonts.google.com/' className='navbar__item'>Discord</a>
+                        <a href='#landingmission__section' className='navbar__item'>About</a>
+                        <a href='#landingtracks__section' className='navbar__item'>Tracks</a>
+                        <a href='#landingsponsors__section' className='navbar__item'>Sponsors</a>
+                        <a href='https://devpost.com/' className='navbar__item' target='_blank' rel='noreferrer'>Devpost</a>
+                        <a href='https://discord.com/' className='navbar__item' target='_blank' rel='noreferrer'>Discord</a>
                     {/* </div> */}
                     {/* <div className='navbar__right'> */}
                         {/* <button className='btn__reg'><span>[ </span> Register<span> ]</span></button>
@@ -78,7 +78,7 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className='landingmission__section'>
+            <section className='landingmission__section' id='landingmission__section'>
                 <div className='landingmission'>
                     <div className='landingmission__top'>
                         <img src={side1} alt='Sideimg1' className='landingmission__side'/>
@@ -95,7 +95,7 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className='landingtrack__section'>
+            <section className='landingtrack__section' id='landingtracks__section'>
                 <div className='landingtrack'>
                     <div className='landingtrack__text'>
                         <h2 className='landingtrack__header'>Our Tracks</h2>
@@ -185,7 +185,7 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className='landingsponsors__section'>
+            <section className='landingsponsors__section' id='landingsponsors__section'>
                 <div className='landingsponsors'>
                 <div className='landingsponsors__text'>
                         <h2 className='landingsponsors__header'>Sponsors</h2>
@@ -200,7 +200,7 @@ const LandingPage = () => {
                             <h3 className='landinginterest__header'>Interested in Sponsoring?</h3>
                         </div>
                         <div className='landinginterest__middle'>
-                            <h6 className='landinginterest__text'>XHacks is organized by a group of high school students who’ve been to numerous hackathons and have helped organize over 4 other hackathons. We’re aiming for around 300 hackers this year and we hope to help them all create amazing products that can be used by real people. <br/><br/> If your mission aligns with ours, we’d love for you to be a sponsor, so feel free to send us an email using the link below or check out our sponsorship package!</h6>
+                            <h6 className='landinginterest__text'><span>XHacks</span> is organized by a group of high school students who’ve been to numerous hackathons and have helped organize over 4 other hackathons. We’re aiming for around 300 hackers this year and we hope to help them all create amazing products that can be used by real people. <br/><br/> If your mission aligns with ours, we’d love for you to be a sponsor, so feel free to send us an email using the link below or check out our sponsorship package!</h6>
                         </div>
                         <div className='landinginterest__last'>
                             <img className='emailus-btn' src={(emailHover) ? emailHoverImg : emailus} alt='email us' onMouseOut={() => setEmailHover(false)} onMouseOver={() => setEmailHover(true)} />
@@ -215,16 +215,16 @@ const LandingPage = () => {
                     <h2 className='footer__text2'>Xhacks 2021 ©</h2>
                         <div className='footer__social'>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
+                            <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'><img src={logo1} alt='Footer Logo' className='footer__logo'/></a>
                             </div>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo2} alt='Footer Logo' className='footer__logo'/></a>
+                            <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer'><img src={logo2} alt='Footer Logo' className='footer__logo'/></a>
                             </div>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo3} alt='Footer Logo'className='footer__logo'/></a>
+                            <a href='http://gmail.com/' target='_blank' rel='noreferrer'><img src={logo3} alt='Footer Logo'className='footer__logo'/></a>
                             </div>
                             <div>
-                            <a href='https://fonts.google.com/'><img src={logo4} alt='Footer Logo'className='footer__logo'/></a>
+                            <a href='https://github.com/' target='_blank' rel='noreferrer'><img src={logo4} alt='Footer Logo'className='footer__logo'/></a>
                             </div>
                         </div>
                 </div>
