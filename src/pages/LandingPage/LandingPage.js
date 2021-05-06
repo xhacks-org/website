@@ -13,7 +13,6 @@ import logo1 from './assets/logo1.svg';
 import logo2 from './assets/logo2.svg';
 import logo3 from './assets/logo3.svg';
 import logo4 from './assets/logo4.svg';
-import main from './assets/main.svg';
 import side1 from './assets/side1.svg';
 import side2 from './assets/side2.svg';
 import last1 from './assets/last1.svg';
@@ -28,18 +27,8 @@ import icon7 from './assets/icon7.svg';
 import icon8 from './assets/icon8.svg';
 import icon9 from './assets/icon9.svg';
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-    hover:{
-        textShadow: "5px 5px 6px rgba(0, 0, 0, 0.35)",
-        cursor: "pointer"
-    }
-}))
-
 
 const LandingPage = () => {
-    const classes = useStyles();
     const [discordHover, setDiscHover] = useState(false);
     const [registerHover, setRegisterHover] = useState(false);
     const [sponsorHover, setSponsorHover] = useState(false);
@@ -49,7 +38,6 @@ const LandingPage = () => {
     const mainImg = (screenWidth < 959) ? landingSmall : landing;
 
     return (
-
         <div className='app-container'>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></link>
