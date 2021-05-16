@@ -1,4 +1,4 @@
-import LandingPage from '../../pages/LandingPage/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 import './app.css';
 
 function App() {
