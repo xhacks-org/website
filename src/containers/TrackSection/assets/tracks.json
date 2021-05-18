@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "name": "Scale Track",
+            "desc": "Improve existing projects and get judged based on the level of improvements made.",
+            "icon": ""
+        },
+        {
+            "name": "Veteran Track",
+            "desc": "Submit a technically complex and impressive project as a hackathon-veteran.",
+            "icon": ""
+        },
+        {
+            "name": "Rookie Track",
+            "desc": "For beginner developers that have only gone to two hackathons or less.",
+            "icon": ""
+        },
+        {
+            "name": "Solo Track",
+            "desc": "For Solo developers since making a project by yourself is tough, but rewarding!",
+            "icon": ""
+        },
+        {
+            "name": "Relay Track",
+            "desc": "Compete with other teams on a time-based, relay code track. Only one person can code at a time.",
+            "icon": "",
+            "featured": true
+        },
+        {
+            "name": "Idea Track",
+            "desc": "Submit only a design prototype and idea to get judged. No coding necessary!",
+            "icon": ""
+        }
+    ]
+}

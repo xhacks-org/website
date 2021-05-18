@@ -1,0 +1,11 @@
+.track-panel {
+    width: 335px;
+    height: 311px;
+}
+
+.panel-bg{
+    margin-top: 0px;
+    width: 335px;
+    height: 311px;
+    z-index: 1;
+}

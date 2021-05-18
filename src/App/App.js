@@ -1,4 +1,4 @@
-import LandingPage from './containers/LandingPage/LandingPage';
+import LandingPage from '../pages/LandingPage/LandingPage';
 import './app.css';
 
 const App = () => {

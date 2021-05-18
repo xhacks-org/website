@@ -1,0 +1,56 @@
+html, body {
+  background: #000A18;
+  min-width: 500px;
+  max-width: 1280px;
+  font-family: Inter;
+}
+
+element {
+  --dark-fill: #000A18;
+}
+
+.App {
+  width: 100vw;
+  text-align: center;
+  min-width: 500px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.primary-gradient {
+  background-image: url('./assets/primaryGradient.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.primary-gradient-wide {
+  background-image: url('./assets/primaryGradientWide.svg');
+  background-size: auto;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 900;
+}
