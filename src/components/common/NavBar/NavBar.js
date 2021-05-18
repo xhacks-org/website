@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from './assets/logo.svg';
-import '../NavBar/NavBar.css';
+import './NavBar.css';
 import facebook from './assets/facebook.svg';
 import linkedin from './assets/linkedin.svg';
 import instagram from './assets/instagram.svg';
 import twitter from './assets/twitter.svg';
-
-
 
 const NavBar = () => {
     return (

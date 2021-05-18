@@ -1,7 +1,7 @@
-import LandingPage from './pages/LandingPage/LandingPage';
+import LandingPage from './containers/LandingPage/LandingPage';
 import './app.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <LandingPage/>
