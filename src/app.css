@@ -1,5 +1,5 @@
 html, body {
-  background: linear-gradient(180deg, #1555D1 0%, #031E53 100%);
+  background: #000A18;
   min-width: 500px;
   max-width: 1280px;
 }
@@ -45,6 +45,6 @@ html, body {
   }
 }
 .App {
-  background: linear-gradient(180deg, #1555d1 0%, #031e53 100%);
+  background: #000A18;
   min-height: 100vh;
 }

@@ -1,36 +1,43 @@
 import React, { useState } from 'react';
 import './landingpage.css';
-import landing from './assets/landing.svg';
-import landingSmall from './assets/mainSmall.svg';
-import discHover from './assets/discHover.svg';
-import registerHoverImg from './assets/registerHover.svg';
-import sponsorHoverImg from './assets/sponsorHover.svg';
-import disc from './assets/disc.svg';
-import register from './assets/register.svg';
-import sponsorus from './assets/sponsorus.svg';
-import emailus from './assets/emailus.svg';
-import emailHoverImg from './assets/emailusHover.svg';
-import sponsorpkg from './assets/sponsorpkg.svg';
-import sponsorpkgHoverImg from './assets/sponsorpkgHoverImg2.svg';
-import logo from './assets/logo.svg';
-import logo1 from './assets/logo1.svg';
-import logo2 from './assets/logo2.svg';
-import logo3 from './assets/logo3.svg';
-import logo4 from './assets/logo4.svg';
-import side1 from './assets/side1.svg';
-import side2 from './assets/side2.svg';
-import last1 from './assets/last1.svg';
-import last2 from './assets/last2.svg';
-import icon1 from './assets/icon1.svg';
-import icon2 from './assets/icon2.svg';
-import icon3 from './assets/icon3.svg';
-import icon4 from './assets/icon4.svg';
-import icon5 from './assets/icon5.svg';
-import icon6 from './assets/icon6.svg';
-import icon7 from './assets/icon7.svg';
-import icon8 from './assets/icon8.svg';
-import icon9 from './assets/icon9.svg';
-import Grid from '@material-ui/core/Grid';
+import NavBar from '../../components/NavBar/NavBar';
+// import landing from './assets/landing.svg';
+// import landingSmall from './assets/mainSmall.svg';
+// import discHover from './assets/discHover.svg';
+// import registerHoverImg from './assets/registerHover.svg';
+// import sponsorHoverImg from './assets/sponsorHover.svg';
+// import disc from './assets/disc.svg';
+// import register from './assets/register.svg';
+// import sponsorus from './assets/sponsorus.svg';
+// import logo from './assets/logo.svg';
+// import logo1 from './assets/logo1.svg';
+// import logo2 from './assets/logo2.svg';
+// import logo3 from './assets/logo3.svg';
+// import logo4 from './assets/logo4.svg';
+// import main from './assets/main.svg';
+// import side1 from './assets/side1.svg';
+// import side2 from './assets/side2.svg';
+// import last1 from './assets/last1.svg';
+// import last2 from './assets/last2.svg';
+// import icon1 from './assets/icon1.svg';
+// import icon2 from './assets/icon2.svg';
+// import icon3 from './assets/icon3.svg';
+// import icon4 from './assets/icon4.svg';
+// import icon5 from './assets/icon5.svg';
+// import icon6 from './assets/icon6.svg';
+// import icon7 from './assets/icon7.svg';
+// import icon8 from './assets/icon8.svg';
+// import icon9 from './assets/icon9.svg';
+// import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    hover:{
+        textShadow: "5px 5px 6px rgba(0, 0, 0, 0.35)",
+        cursor: "pointer"
+    }
+}))
+
 
 const LandingPage = () => {
     const [discordHover, setDiscHover] = useState(false);
@@ -41,28 +48,25 @@ const LandingPage = () => {
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
     window.addEventListener('resize', () => setScreenWidth(window.screen.width));
-    const mainImg = (screenWidth < 959) ? landingSmall : landing;
+    // const mainImg = (screenWidth < 959) ? landingSmall : landing;
 
     return (
         <div className='app-container'>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></link>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
-            <section className='navbar__section'>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+            <NavBar/>
+            
+            
+            {/* <section className='navbar__section'>
                 <div className='navbar'>
-                    {/* <div className='navbar__left'> */}
                         <img src={logo} alt='Logo' className='navbar__logo'/>
-                        <a href='#landingmission__section' className='navbar__item'>About</a>
-                        <a href='#landingtracks__section' className='navbar__item'>Tracks</a>
-                        <a href='#landingsponsors__section' className='navbar__item'>Sponsors</a>
-                        <a href='https://devpost.com/' className='navbar__item' target='_blank' rel='noreferrer'>Devpost</a>
-                        <a href='https://discord.com/' className='navbar__item' target='_blank' rel='noreferrer'>Discord</a>
-                    {/* </div> */}
-                    {/* <div className='navbar__right'> */}
-                        {/* <button className='btn__reg'><span>[ </span> Register<span> ]</span></button>
-                        <button className='btn__us'><span>[ </span> Sponsor Us<span> ]</span></button> */}
-                    {/* </div> */}
+                        <a href='https://fonts.google.com/' className='navbar__item'>About</a>
+                        <a href='https://fonts.google.com/' className='navbar__item'>Tracks</a>
+                        <a href='https://fonts.google.com/' className='navbar__item'>Sponsors</a>
+                        <a href='https://fonts.google.com/' className='navbar__item'>Devpost</a>
+                        <a href='https://fonts.google.com/' className='navbar__item'>Discord</a>
                 </div>
             </section>
             <section className='landingcontent__section'>
@@ -227,8 +231,7 @@ const LandingPage = () => {
                             <a href='https://github.com/' target='_blank' rel='noreferrer'><img src={logo4} alt='Footer Logo'className='footer__logo'/></a>
                             </div>
                         </div>
-                </div>
-
+                </div> */}
         </div>
         
     );
