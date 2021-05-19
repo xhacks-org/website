@@ -1,0 +1,217 @@
+
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot");
+  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display")
+      format("svg");
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main__text{
+    margin-top: 80px;
+    text-align: left;
+    width: 630px;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+    .main__text{
+      width: 90%;
+    }
+  }
+
+.text__date{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFEFE;
+    margin-bottom: 10px;
+}
+
+.text__likeYou{
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -40px;
+}
+
+.text__title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+
+.text__subTitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    width: 600px;
+    /* or 156% */
+
+
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .text__subTitle{
+      width: 90%;
+    }
+  }
+
+.text__action{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .text__action{
+      width: 400px;
+      justify-content: left;
+    }
+  }
+
+.action__register{
+    width: 161px;
+    height: 55px;
+    background: #FFFEFE;
+    border-radius: 7px;
+    background: url(./assets/registerBack.svg);
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    border: none;
+
+    color: #000A18;
+}
+
+@media only screen and (max-width: 600px) {
+    .action__register{
+        width: 100px;
+        font-size: 14px;
+        height: 40px;
+    }
+  }
+
+.action__sponsor{
+    width: 183px;
+    height: 55px;
+    background: #FFFEFE;
+    border-radius: 7px;
+    background: url(./assets/Light\ Gradient\ 14.jpg);
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    border: none;
+
+
+    color: #000A18;
+    margin-left: -5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .action__sponsor{
+        width: 100px;
+        font-size: 14px;
+        height: 40px;
+        margin-left: 10px;
+    }
+  }
+
+.action__disc{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .action__disc{
+        margin-left: 10px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .discordSmall{
+        width: 30px;
+    }
+  }
+
+.action__dev{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .action__dev{
+        margin-left: 20px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .devPostSmall{
+        width: 27px;
+    }
+  }
+
+.main__terminal{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .main__terminal{
+      display: none;
+    }
+  }
+
+.terminal__placeholder{
+    background: grey;
+    width: 375px;
+    border-radius: 20px;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+.terminal__tryOut{
+    width: 150px;
+    margin-left: 0px;
+}
