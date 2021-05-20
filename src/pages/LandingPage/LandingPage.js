@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './landingpage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import Main from '../../components/Main/Main';
+import Mission from '../../components/Mission/Mission';
 // import landing from './assets/landing.svg';
 // import landingSmall from './assets/mainSmall.svg';
 // import discHover from './assets/discHover.svg';
@@ -57,8 +58,9 @@ const LandingPage = () => {
             <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></link>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
-            <NavBar/>
-            <Main/>
+            <NavBar />
+            <Main />
+            <Mission />
             
             
             {/* <section className='navbar__section'>
