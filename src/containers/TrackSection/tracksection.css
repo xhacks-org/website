@@ -18,8 +18,30 @@
 .track-grid {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 332px 332px 332px;
-    grid-template-rows: 309px 309px 309px;
+    grid-template-columns: 341px 341px 341px;
+    grid-template-rows: 311px 311px;
     row-gap: 55px;
     column-gap: 55px;
+}
+
+@media (min-width: 723px) and (max-width: 1220px) {
+    .track-grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 341px 341px;
+        grid-template-rows: 311px 311px 311px;
+        row-gap: 55px;
+        column-gap: 55px;
+    }
+}
+
+@media only screen and (max-width: 827px) {
+    .track-grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 341px;
+        grid-template-rows: 311px 311px 311px;
+        row-gap: 55px;
+        column-gap: 55px;
+    }
 }
