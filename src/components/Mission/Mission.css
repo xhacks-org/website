@@ -1,0 +1,165 @@
+
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot");
+  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display")
+      format("svg");
+}
+
+.mission{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.mission__content{
+    margin-top: 80px;
+    text-align: left;
+    width: 630px;
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 680px) {
+    .mission__content{
+        width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+    .mission__content{
+        text-align: center;
+    }
+  }
+
+.content__title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content__title{
+        margin-left: -45px;
+    }
+  }
+
+.content__text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    width: 550px;
+
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 680px) {
+    .content__text{
+        width: 90%;
+    }
+  }
+
+.content__whatWeDo{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 315px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content__whatWeDo{
+        text-align: center;
+        margin-left: 140px;
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .content__whatWeDo{
+        display: none;
+    }
+  }
+
+.content__loveTech{
+    position: absolute;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content__loveTech{
+        position: absolute;
+        margin-top: 25px;
+        margin-left: -320px;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .content__loveTech{
+        display: none;
+    }
+  }
+
+.content__yay{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 440px;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .content__yay{
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 160px;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .content__yay{
+        display: none;
+    }
+  }
+
+.mission__slides{
+    width: 900px;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 160px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .mission__slides{
+      display: none;
+    }
+  }
+
+.slides__placeholder{
+    background: grey;
+    width: 375px;
+    border-radius: 20px;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+.slides__item{
+    height: 200px;
+}
