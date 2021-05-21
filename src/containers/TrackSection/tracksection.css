@@ -1,0 +1,47 @@
+.track-section {
+    margin-top: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.track-desc {
+    margin-top: 28px;
+    max-width: 999px;
+    width: 78%;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.track-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 341px 341px 341px;
+    grid-template-rows: 311px 311px;
+    row-gap: 55px;
+    column-gap: 55px;
+}
+
+@media (min-width: 723px) and (max-width: 1220px) {
+    .track-grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 341px 341px;
+        grid-template-rows: 311px 311px 311px;
+        row-gap: 55px;
+        column-gap: 55px;
+    }
+}
+
+@media only screen and (max-width: 827px) {
+    .track-grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 341px;
+        grid-template-rows: 311px 311px 311px;
+        row-gap: 55px;
+        column-gap: 55px;
+    }
+}
