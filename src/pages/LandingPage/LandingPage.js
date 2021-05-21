@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './landingpage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import TrackSection from '../../containers/TrackSection/TrackSection';
-import Main from '../../components/Main/Main';
+import Main from '../../containers/Main/Main';
 import Mission from '../../containers/Mission/Mission';
 
 
@@ -12,10 +12,9 @@ const LandingPage = () => {
     return (
         <div className='app-container'>
             <NavBar/>
-            <TrackSection reference={trackRef} />
-            <NavBar />
             <Main />
             <Mission />
+            <TrackSection reference={trackRef} />
         </div>
     );
 }
