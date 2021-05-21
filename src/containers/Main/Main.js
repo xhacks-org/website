@@ -8,9 +8,9 @@ import devPost from './assets/discord.svg';
 import '../Main/Main.css';
 
 const Main = () => {  
-    var titles = ['great software', 'astonishing hardware', 'amazing innovations', 'marvelous creations'];
-    const [title, setTitle] = useState('');
-    let index;   
+    // var titles = ['great software', 'astonishing hardware', 'amazing innovations', 'marvelous creations'];
+    // const [title, setTitle] = useState('');
+    // let index;   
 
 
     // setInterval(()=> {
@@ -26,43 +26,34 @@ const Main = () => {
 
     return (
         <div className='main'>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
             <div className="main__text">
                 <h1 className="text__date">August 15-17</h1>
-                <img className="text__likeYou" src={likeYou}/>
-                <h1 className="text__title">XHacks helps hackers build <span className="text__dynamicTitle">{title}</span>
-                <img className="text__niceGradient" src={niceGradient}/>
+                    <img className="text__likeYou" src={likeYou} alt='like you'/>
+                    <h1 className="text__title">XHacks helps hackers build <span className="text__dynamicTitle"></span>
+                    <img className="text__niceGradient" src={niceGradient} alt='gradient'/>
                 </h1>
-                
-                <h1 className="text__subTitle">Let’s be honest. Hackathons are great.
-                But as all great things, we think that they can be improved even
-                further. As avid hackers ourselves, we’ve been to many hackathons
-                and we’ve noticed one common trend.</h1>
-                
+                <h1 className="text__subTitle">
+                    Let’s be honest. Hackathons are great.
+                    But we think that they can be improved even
+                    further. That's why we created XHacks, to inspire hackers to create products that last.
+                </h1>
                 <div className="text__action">
                     <button className="action__register">Register</button>
                     <button className="action__sponsor">Sponsor Us</button>
                     <div className="action__dev">
-                        <a>
-                            <img className="devPostSmall" src={devPost} />
-                        </a>
+                        <a><img className="devPostSmall" src={devPost} alt='devpost'/></a>
                     </div>
                     <div className="action__disc">
-                        <a>
-                            <img className="discordSmall" src={discord}/>
-                        </a>
+                        <a><img className="discordSmall" src={discord} alt='discord'/></a>
                     </div>
-                    
                 </div>
             </div>
             <div className="main__terminal">
                 <div className='terminal__placeholder'></div>
-                <img className="terminal__tryOut" src={tryOut}/>
+                <img className="terminal__tryOut" src={tryOut} alt='try out terminal'/>
             </div>
         </div>
     )
-
 };
 
 export default Main;

@@ -1,5 +1,5 @@
 import React from 'react';
-import TrackPanel from '../../components/common/TrackPanel/TrackPanel';
+import TrackPanel from '../../components/TrackPanel/TrackPanel';
 import assets from './assets/tracks.json';
 import idea from './assets/idea.svg';
 import rookie from './assets/rookie.svg';
