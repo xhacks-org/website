@@ -1,21 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
-@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot");
-  src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display")
-      format("svg");
-}
-
 .main{
     display: flex;
     justify-content: space-around;
@@ -68,8 +51,8 @@
 
 .text__likeYou{
     position: absolute;
-    margin-left: 310px;
-    margin-top: -40px;
+    margin-left: 380px;
+    margin-top: -50px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -112,14 +95,45 @@
 
 .text__action{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     width: 500px;
 }
 
+.action__social {
+  height: 35px;
+  width: 91px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1100px) {
+  .main__text {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text__subTitle {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
   .text__action{
     width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 109px;
     justify-content: center;
+    margin-right: 0px;
+  }
+
+  .action__social {
+    display: none;
   }
 }
 
@@ -128,6 +142,34 @@
     .text__action{
       width: 90%;
     }
+  }
+
+
+  .action__dev {
+    margin-bottom: 0px;
+    filter: brightness(50%);
+  }
+
+  .action__disc {
+    filter: brightness(50%);
+  }
+
+  .action__dev:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+  }
+
+  .action__disc:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+  }
+
+  .action__buttons {
+    width: 494px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
 .action__register{
@@ -147,13 +189,14 @@
     border: none;
 
     color: #000A18;
+    transition: 0.2s ease;
 }
 
-@media only screen and (max-width: 1100px) {
-  .action__register{
-    margin-right: 20px;
-  }
+.action__register:hover{
+  cursor: pointer;
+  margin-top: -10px;
 }
+
 
 
 /* @media only screen and (max-width: 600px) {
@@ -169,7 +212,7 @@
     height: 55px;
     background: #FFFEFE;
     border-radius: 7px;
-    background: url(./assets/Light\ Gradient\ 14.jpg);
+    background: url(./assets/sponsorBack.png);
     
     font-family: Inter;
     font-style: normal;
@@ -183,50 +226,13 @@
 
     color: #000A18;
     margin-left: -5px;
+    transition: 0.2s ease;
 }
 
-@media only screen and (max-width: 1100px) {
-  .action__sponsor{
-    margin-right: 30px;
-  }
+.action__sponsor:hover {
+  margin-top: -10px;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .action__sponsor{
-        width: 100px;
-        font-size: 14px;
-        height: 40px;
-        margin-left: 10px;
-    }
-  } */
-
-.action__disc{
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-@media only screen and (max-width: 1100px) {
-  .action__dev{
-    margin-right: 10px;
-  }
-}
-
-/* @media only screen and (max-width: 600px) {
-    .discordSmall{
-        width: 30px;
-    }
-  } */
-
-.action__dev{
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-/* @media only screen and (max-width: 600px) {
-    .devPostSmall{
-        width: 27px;
-    }
-  } */
 
 .main__terminal{
     display: flex;
@@ -243,13 +249,6 @@
     }
   }
 
-.terminal__placeholder{
-    background: grey;
-    width: 375px;
-    border-radius: 20px;
-    height: 225px;
-    margin-bottom: 20px;
-}
 
 .terminal__tryOut{
     width: 150px;

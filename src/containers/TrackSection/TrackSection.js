@@ -14,7 +14,7 @@ const TrackSection = ({ reference }) => {
 
     return (
         <section ref={reference} className='track-section'>
-            <div className='primary-gradient'>
+            <div className='maintext-gradient'>
                 <h1 className='header'>Our Tracks</h1>
             </div>
             <p className='track-desc'>We’ve been to hackathons with only a couple of tracks and while they’re not bad, we think more tracks is generally more inclusive for everyone. That’s why we’re doing our best to have a couple tracks for everyone, so that you have multiple chances to learn and win! </p>

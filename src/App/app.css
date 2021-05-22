@@ -1,6 +1,6 @@
 html, body {
   background: #000A18;
-  min-width: 500px;
+  min-width: 530px;
   max-width: 1280px;
   font-family: Inter;
 }
@@ -12,7 +12,7 @@ element {
 .App {
   width: 100vw;
   text-align: center;
-  min-width: 500px;
+  min-width: 530px;
 }
 
 .App-logo {
@@ -53,4 +53,11 @@ element {
 .header {
   font-size: 48px;
   font-weight: 900;
+}
+
+.maintext-gradient {
+  background-image: url('./assets/greatsoftware.jpeg');
+  background-size: auto;
+  -webkit-background-clip: text;
+  color: transparent;
 }

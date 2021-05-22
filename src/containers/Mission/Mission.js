@@ -24,7 +24,7 @@ const Mission = () => {
     return (
         <div className='mission'>
             <div className='mission__content'>
-                <h1 className="content__title">Our Mission</h1>
+                <h1 className="content__title maintext-gradient">Our Mission</h1>
                 <img className="content__whatWeDo" src={topPic} alt='what we do' />
                 <h1 className="content__text">Let’s be honest. Hackathons are great.
                  But as all great things, we think that they can be improved even further.
