@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import likeYou from './assets/likeYou.svg';
 import discord from './assets/devPost.svg';
 import devPost from './assets/discord.svg';
@@ -7,21 +7,6 @@ import terminal from './assets/terminal.svg';
 import '../Main/Main.css';
 
 const Main = () => {  
-    // var titles = ['great software', 'cool hardware', 'connected IOT', 'intuitive AI', 'great technology'];
-    // const [title, setTitle] = useState('');
-    // let index;   
-
-
-    // setInterval(()=> {
-    //     index = Math.floor(Math.random() * titles.length);
-    //     console.log(index);
-    //     setTitle(titles[index]);
-    //     titles.splice(index);
-    //     console.log(titles);
-    //     if(titles.length == 0){
-    //         titles = ['great software', 'astonishing hardware', 'amazing innovations', 'marvelous creations'];
-    //     }
-    // }, 3000);
 
     return (
         <div className='main'>
@@ -37,13 +22,13 @@ const Main = () => {
                 </h1>
                 <div className="text__action">
                     <div className='action__buttons'>
-                        <button className="action__register">Register</button>
-                        <button className="action__sponsor">Sponsor Us</button>
+                        <button className="action__register" onClick={() => { window.open('https://xhacks.typeform.com/to/YgyvCH8L') }}>Register</button>
+                        <button className="action__sponsor" onClick={() => { window.open('https://xhacks.live/sponsorshipPKG.pdf') }}>Sponsor Us</button>
                         <div className="action__dev">
-                            <a><img className="devPostSmall" src={devPost} alt='devpost' draggable='false'/></a>
+                            <a href='https://devpost.com'><img className="devPostSmall" src={devPost} alt='devpost' draggable='false'/></a>
                         </div>
                         <div className="action__disc"> 
-                            <a><img className="discordSmall" src={discord} alt='discord' draggable='false'/></a>
+                            <a href='https://discord.com'><img className="discordSmall" src={discord} alt='discord' draggable='false'/></a>
                         </div>
                     </div>
                 </div>

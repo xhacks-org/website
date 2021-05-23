@@ -8,6 +8,13 @@ button:hover {
     justify-content: space-between;
 }
 
+.logo {
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
 
 .barLeft{
     margin-left: 38px;
@@ -19,8 +26,10 @@ button:hover {
     width: 572px;
 }
 
+
+
 .item:hover {
-    filter: brightness(90%);
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 650px) {
@@ -53,6 +62,7 @@ button:hover {
     color: #FFFEFE;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    transition: all .2s ease-in-out;
 }
 
 .barRight{
@@ -72,10 +82,12 @@ button:hover {
 
 .icon {
     filter: brightness(50%);
+    transition: all .2s ease-in-out;
 }
 
 .icon:hover {
     filter: brightness(100%);
+    transform: scale(1.1);
 }
 
 /* .facebook:hover {

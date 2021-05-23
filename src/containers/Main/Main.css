@@ -148,20 +148,24 @@
   .action__dev {
     margin-bottom: 0px;
     filter: brightness(50%);
+    transition: all .2s ease-in-out;
   }
 
   .action__disc {
     filter: brightness(50%);
+    transition: all .2s ease-in-out;
   }
 
   .action__dev:hover {
     filter: brightness(100%);
     cursor: pointer;
+    transform: scale(1.1);
   }
 
   .action__disc:hover {
     filter: brightness(100%);
     cursor: pointer;
+    transform: scale(1.1);
   }
 
   .action__buttons {
@@ -189,12 +193,12 @@
     border: none;
 
     color: #000A18;
-    transition: 0.2s ease;
+    transition: all .2s ease-in-out;
 }
 
 .action__register:hover{
   cursor: pointer;
-  margin-top: -10px;
+  transform: scale(1.05);
 }
 
 
@@ -226,11 +230,11 @@
 
     color: #000A18;
     margin-left: -5px;
-    transition: 0.2s ease;
+    transition: all .2s ease-in-out;
 }
 
 .action__sponsor:hover {
-  margin-top: -10px;
+  transform: scale(1.05);
 }
 
 
@@ -241,11 +245,29 @@
     margin-top: 120px;
     align-items: center;
     margin-left: 60px;
+    transition: all .2s ease-in-out;
 }
+
+.main__terminal:hover {
+  transform: scale(1.05);
+}
+
 
 @media only screen and (max-width: 1100px) {
     .main__terminal{
       display: none;
+    }
+
+    .action__dev {
+      display: none;
+    }
+
+    .action__disc{
+      display: none;
+    }
+
+    .action__buttons {
+      width: 367px;
     }
   }
 

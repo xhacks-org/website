@@ -1,0 +1,62 @@
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  width: 514px;
+  margin-bottom: 34px;
+}
+
+.accordion {
+  background-color: white;
+  width: 514px;
+  height: 56px;
+  color: #000A18;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+  border-radius: 7px;
+}
+
+
+/* Style the accordion content title */
+.accordion__title {
+  font-family: Inter;
+  font-weight: 600;
+  text-align: left;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 29px;
+  margin-left: 30px;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  margin-right: 26px;
+  transition: transform 0.4s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  color: white;
+  overflow: auto;
+  transition: max-height 0.4s ease;
+  text-align: left;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  margin-top: 14px;
+  margin-left: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}

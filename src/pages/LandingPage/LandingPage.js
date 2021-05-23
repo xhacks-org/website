@@ -4,7 +4,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import TrackSection from '../../containers/TrackSection/TrackSection';
 import Main from '../../containers/Main/Main';
 import Mission from '../../containers/Mission/Mission';
-import FAQAccordion from '../../components/FAQAccordion/FAQAccordion';
+import FAQSection from '../../containers/FAQSection/FAQSection';
+import Footer from '../../components/Footer/Footer';
 
 
 const LandingPage = () => {
@@ -16,7 +17,8 @@ const LandingPage = () => {
             <Main />
             <Mission />
             <TrackSection reference={trackRef} />
-            <FAQAccordion />
+            <FAQSection />
+            <Footer />
         </div>
     );
 }
