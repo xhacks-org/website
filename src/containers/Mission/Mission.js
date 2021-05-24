@@ -20,9 +20,9 @@ let items = [
 ]
 
 
-const Mission = () => {  
+const Mission = ({ reference }) => {  
     return (
-        <div className='mission'>
+        <div className='mission' ref={reference}>
             <div className='mission__content'>
                 <h1 className="content__title maintext-gradient">Our Mission</h1>
                 <img className="content__whatWeDo" src={topPic} alt='what we do' />

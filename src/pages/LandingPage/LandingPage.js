@@ -10,14 +10,17 @@ import Footer from '../../components/Footer/Footer';
 
 const LandingPage = () => {
     const trackRef = useRef(null);
+    const missionRef = useRef(null);
+    const faqRef = useRef(null);
+    const scrollToDiv = (ref) => window.scrollTo({top: ref.current.offsetTop-40, left: 0, behavior: 'smooth'});
     
     return (
         <div className='app-container'>
-            <NavBar/>
+            <NavBar aboutClicked={() => scrollToDiv(missionRef)} faqClicked={() => scrollToDiv(faqRef)} tracksClicked={() => scrollToDiv(trackRef)} />
             <Main />
-            <Mission />
+            <Mission reference={missionRef} />
             <TrackSection reference={trackRef} />
-            <FAQSection />
+            <FAQSection reference={faqRef} />
             <Footer />
         </div>
     );

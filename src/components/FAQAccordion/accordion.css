@@ -6,6 +6,20 @@
 }
 
 .accordion {
+  background-image: url('../../App/assets/faqGradient.jpeg');
+  width: 514px;
+  height: 56px;
+  color: #000A18;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+  border-radius: 7px;
+}
+
+.accordion--white {
   background-color: white;
   width: 514px;
   height: 56px;
