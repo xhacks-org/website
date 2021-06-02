@@ -14,7 +14,7 @@ const NavBar = ({ aboutClicked, tracksClicked, faqClicked }) => {
                 <button onClick={aboutClicked} className='item'>About</button>
                 <button onClick={tracksClicked} className='item'>Tracks</button>
                 <button onClick={faqClicked} className='item'>FAQ</button>
-                <button onClick={faqClicked} className='item'>Contact</button>
+                <button onClick={() => window.open('mailto:team@xhacks.ca')} className='item'>Contact</button>
             </div>
             <div className="barRight">
             <div className='icon'>
