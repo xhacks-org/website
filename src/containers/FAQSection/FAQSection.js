@@ -22,7 +22,7 @@ const FAQSection = ({ reference }) => {
                     <FAQAccordion gradient={true} question='What about COVID-19 and all?' answer='XHacks will be entirely virtual, so the only reason you’ll need to leave your bedroom is to go to the washroom or get a snack!' />
                     <FAQAccordion question='I don’t know any code though...' answer='No problem! We’ve got an Idea Track specifically for non-technical hackers where you only have to pitch your idea and submit a design. We’ll also have workshops for you to learn as well.' />
                     <FAQAccordion gradient={true} question='How about the schedule?' answer='Our schedule will be posted in the coming weeks, so just make sure to keep an eye out on the emails we send to get notified!' />
-                    <FAQAccordion question='I have more questions!' answer='And we’ve got answers (probably). Just shoot us an email at support@xhacks.ca and we’ll get back to you as soon as we can!' />
+                    <FAQAccordion question='I have more questions!' answer='And we’ve got answers (probably). Just shoot us an email at team@xhacks.ca and we’ll get back to you as soon as we can!' />
                 </div>
             </div>
         </div>

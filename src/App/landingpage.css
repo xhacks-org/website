@@ -39,6 +39,7 @@ a {
   align-items: center;
   min-width: 500px;
   background: #000A18;
+  display: none;
 }
 
 .navbar__section {
