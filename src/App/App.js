@@ -21,7 +21,7 @@ const App = () => {
     setTimeout(() => {
       loadingRef.current.style.display = 'none';
       contentRef.current.style.display = 'block';
-    }, 1000);
+    }, 500);
   }
 
   return (

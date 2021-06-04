@@ -30,6 +30,21 @@
             "name": "Idea Track",
             "desc": "Submit only a design prototype and idea to get judged. No coding necessary!",
             "icon": "idea"
+        },
+        {
+            "name": "Open Source Track",
+            "desc": "Submit any project that’s available for other developers and the open source community to utilize.",
+            "icon": "opensource"
+        },
+        {
+            "name": "Startup Track",
+            "desc": "Submit a product and get judged based on market-fit and startup-readiness.",
+            "icon": "startup"
+        },
+        {
+            "name": "Overall Track",
+            "desc": "The standard First, Second and Third place tracks. All projects are automatically submitted for this!",
+            "icon": "overall"
         }
     ]
 }

@@ -7,10 +7,13 @@ import relay from './assets/relay.svg';
 import veteran from './assets/veteran.svg';
 import solo from './assets/solo.svg';
 import scale from './assets/scale.svg';
+import startup from './assets/startup.svg';
+import opensource from './assets/opensource.svg';
+import overall from './assets/overall.svg';
 import './tracksection.css';
 
 const TrackSection = ({ reference }) => {
-    const imageAssets = { idea, rookie, relay, veteran, solo, scale };
+    const imageAssets = { idea, rookie, relay, veteran, solo, scale, startup, opensource, overall };
 
     return (
         <section ref={reference} className='track-section'>
