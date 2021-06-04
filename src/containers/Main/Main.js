@@ -11,7 +11,7 @@ const Main = () => {
     return (
         <div className='main'>
             <div className="main__text">
-                <h1 className="text__date">AUGUST 15-17</h1>
+                <h1 className="text__date">AUGUST 6 - 8</h1>
                     <img className="text__likeYou" src={likeYou} alt='like you'/>
                     <h1 className="text__title">XHacks helps hackers build <span className="maintext-gradient">great software</span>
                 </h1>
