@@ -12,7 +12,7 @@ const FAQSection = ({ reference }) => {
             <div className='faq-grid'>
                 <div className='faq-column--left'>
                     <FAQAccordion gradient={true} question="Hold up, what's a hackathon again?" answer='A hackathon is usually a 36-hour event, generally held over a weekend where hackers from everywhere come together and create anything that their imaginations can dream up!' />
-                    <FAQAccordion question='When will XHacks happen?' answer='XHacks will be happening from Friday, August 15 to Sunday, August 17 - fully virtual of course. Our hackathon is a 36-hour one, so you’ll have 36 hours to build a great product.' />
+                    <FAQAccordion question='When will XHacks happen?' answer='XHacks will be happening from Friday, August 6 to Sunday, August 8 - fully virtual of course. Our hackathon is a 36-hour one, so you’ll have 36 hours to build a great product.' />
                     <FAQAccordion gradient={true} question='Sounds cool, but what’s the cost?' answer='Absolutely no cost! XHacks is completely free, so all you’ll need is a laptop, some earbuds and your favorite coffee or warm beverage. We’ll take care of the rest.' />
                     <FAQAccordion question='Where can I see the prizes?' answer='Our prizes aren’t yet up, but when they are, you’ll be able to see them on our Devpost. Keep watch for emails from us and we’ll make sure to tell you!' />
                     <FAQAccordion gradient={true} question='What platform will you be using?' answer='We’ll be communicating entirely on Discord, with most of our workshops being held there. Larger events such as opening and closing ceremonies will be streamed on Youtube.' />
