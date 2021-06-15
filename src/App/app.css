@@ -3,6 +3,7 @@ html, body {
   min-width: 530px;
   max-width: 1280px;
   font-family: Inter;
+  overflow-x: hidden;
 }
 
 element {
