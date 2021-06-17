@@ -1,8 +1,8 @@
 import React from 'react';
-
 import topPic from './assets/topPic.svg';
 import bottomRight from './assets/bottomRight.svg';
 import bottomLeft from './assets/bottomLeft.svg';
+import './Mission.css';
 
 
 const Mission = ({ reference }) => {  
