@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import likeYou from './assets/likeYou.svg';
 import discord from './assets/devPost.svg';
 import devPost from './assets/discord.svg';
@@ -19,7 +19,6 @@ const Main = () => {
           '/home/nested/directory/file': {content: 'End of nested directory!'}
         })
       });
-    const [inputState, setInputState] = useState("👋 Enter a terminal command");
 
     return (
         <div className='main'>
@@ -48,10 +47,8 @@ const Main = () => {
             </div>
             <div className="main__terminal">
                 <ReactTerminalStateless clickToFocus={true} autoFocus={true} 
-                    inputStr={inputState}
+                    inputStr='👋 Enter a terminal command'
                     emulatorState={customState}
-                    onInputChange={(inputState) => setInputState(inputState)}
-                    onStateChange={(emulatorState) => setEmulatorState(emulatorState)} 
                     promptSymbol='>'
                     theme={{
                         background: '#000A18',
