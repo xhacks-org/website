@@ -1,11 +1,14 @@
 
 .main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
 @media only screen and (max-width: 1100px) {
+  .main {
+    justify-content: center;
+  }
   .main__text{
     text-align: center;
   }
@@ -15,7 +18,7 @@
     margin-top: 80px;
     text-align: left;
     width: 630px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -237,19 +240,42 @@
   transform: scale(1.05);
 }
 
-
-.main__terminal{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin-top: 120px;
-    align-items: center;
-    margin-left: 60px;
-    transition: all .2s ease-in-out;
+.main__terminal {
+  text-align: left;
+  border-radius: 15px;
+  width: 385px;
+  height: 318px;
+  margin-top: 100px;
+  margin-right: 80px;
+  overflow: scroll;
+  overflow-y: hidden !important;
+  background-image: url('./assets/terminalBack.svg');
+  filter: drop-shadow(0px 0px 10px #2D5AFA);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main__terminal:hover {
-  transform: scale(1.05);
+.terminalContainer {
+  border-radius: 15px;
+  padding-left: 30px !important;
+  padding-top: 30px !important;
+  overflow: scroll;
+  padding-bottom: 15px !important;
+  overflow-y: hidden !important;
+  font-weight: 800 !important;
+  line-height: normal !important;
+}
+
+.terminalInput {
+  font-weight: 800 !important;
+}
+.terminalOutput {
+  font-weight: 800 !important;
+}
+
+span {
+  margin-right: 10px !important;
 }
 
 

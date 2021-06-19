@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import likeYou from './assets/likeYou.svg';
 import discord from './assets/devPost.svg';
 import devPost from './assets/discord.svg';
-import terminal from './assets/terminal.svg';
+import ReactTerminalStateless from 'react-terminal-component';
+import {
+    EmulatorState, FileSystem
+  } from 'javascript-terminal';
 
 import '../Main/Main.css';
 
-const Main = () => {  
+const Main = () => {
+
+    const customState = EmulatorState.create({
+        'fs': FileSystem.create({
+          '/home': { },
+          '/home/README': {content: 'This is a text file'},
+          '/home/nested/directory': {},
+          '/home/nested/directory/file': {content: 'End of nested directory!'}
+        })
+      });
+    const [inputState, setInputState] = useState("👋 Enter a terminal command");
 
     return (
         <div className='main'>
@@ -34,7 +47,26 @@ const Main = () => {
                 </div>
             </div>
             <div className="main__terminal">
-                <img className='terminal__placeholder' src={terminal} alt='terminal' draggable='false' />
+                <ReactTerminalStateless clickToFocus={true} autoFocus={true} 
+                    inputStr={inputState}
+                    emulatorState={customState}
+                    onInputChange={(inputState) => setInputState(inputState)}
+                    onStateChange={(emulatorState) => setEmulatorState(emulatorState)} 
+                    promptSymbol='>'
+                    theme={{
+                        background: '#000A18',
+                        promptSymbolColor: '#FFFFFF',
+                        commandColor: '#FFFFFF',
+                        outputColor: '#FFFFFF',
+                        errorOutputColor: '#FF3A10',
+                        fontSize: '14px',
+                        spacing: '10px',
+                        fontFamily: 'Inter',
+                        width: '339px',
+                        height: '265px',
+                        borderRadius: '10px'
+                    }} 
+                />
             </div>
         </div>
     )
