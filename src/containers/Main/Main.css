@@ -250,7 +250,6 @@
   overflow: scroll;
   overflow-y: hidden !important;
   background-image: url('./assets/terminalBack.svg');
-  filter: drop-shadow(0px 0px 10px #2D5AFA);
   display: flex;
   align-items: center;
   justify-content: center;
