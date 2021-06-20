@@ -37,7 +37,7 @@ const Main = () => {
                         <button className="action__register" onClick={() => { window.open('https://xhacks.typeform.com/to/YgyvCH8L') }}>Register</button>
                         <button className="action__sponsor" onClick={() => { window.open('https://xhacks.live/sponsorshipPKG.pdf') }}>Sponsor Us</button>
                         <div className="action__dev">
-                            <a href='https://discord.gg/zwcxauwW'><img className="devPostSmall" src={devPost} alt='devpost' draggable='false'/></a>
+                            <a href='https://discord.gg/UKV69V54rG'><img className="devPostSmall" src={devPost} alt='devpost' draggable='false'/></a>
                         </div>
                         <div className="action__disc"> 
                             <a href='https://xhacks.devpost.com'><img className="discordSmall" src={discord} alt='discord' draggable='false'/></a>

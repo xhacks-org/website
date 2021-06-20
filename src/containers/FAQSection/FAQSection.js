@@ -8,7 +8,7 @@ const FAQSection = ({ reference }) => {
             <div className='maintext-gradient faq-gradient'>
                 <h1 className='header faq-header'>Our FAQ</h1>
             </div>
-            <p className='faq-desc'>A Hackathon is a complicated event, so we know you’ll have tons of questions, so we’ve tried out best to answer as many as we can below. But, if you’re a curious person (like us) and have more questions, just hit us up at <span className='bold'>team@xhacks.ca</span>. and we’d love to help you out!</p>
+            <p className='faq-desc'>A Hackathon is a complicated event, so we know you’ll have tons of questions, so we’ve tried out best to answer as many as we can below. But, if you’re a curious person (like us) and have more questions, just hit us up at <span className='bold'>team@xhacks.ca</span>.and we’d love to help you out!</p>
             <div className='faq-grid'>
                 <div className='faq-column--left'>
                     <FAQAccordion gradient={true} question="Hold up, what's a hackathon again?" answer='A hackathon is usually a 36-hour event, generally held over a weekend where hackers from everywhere come together and create anything that their imaginations can dream up!' />
