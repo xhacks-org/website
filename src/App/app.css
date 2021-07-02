@@ -83,5 +83,6 @@ element {
   background-image: url('./assets/greatsoftware.jpeg');
   background-size: auto;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }

@@ -7,6 +7,7 @@ import Main from '../containers/Main/Main';
 import Mission from '../containers/Mission/Mission';
 import FAQSection from '../containers/FAQSection/FAQSection';
 import Footer from '../components/Footer/Footer';
+import Sponsors from '../containers/Sponsors/Sponsors';
 import './app.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
   const trackRef = useRef(null);
   const missionRef = useRef(null);
   const faqRef = useRef(null);
+  const sponsorsRef = useRef(null);
   const scrollToDiv = (ref) => window.scrollTo({top: ref.current.offsetTop-40, left: 0, behavior: 'smooth'});
 
   window.onload = () => {
@@ -30,10 +32,11 @@ const App = () => {
         <img src={loading} alt='loading' className='loadingSpinner' />
       </div>
       <div className='app-container' ref={contentRef}>
-            <NavBar aboutClicked={() => scrollToDiv(missionRef)} faqClicked={() => scrollToDiv(faqRef)} tracksClicked={() => scrollToDiv(trackRef)} />
+            <NavBar aboutClicked={() => scrollToDiv(missionRef)} faqClicked={() => scrollToDiv(faqRef)} tracksClicked={() => scrollToDiv(trackRef)} sponsorsClicked={() => scrollToDiv(sponsorsRef)} />
             <Main />
             <Mission reference={missionRef} />
             <TrackSection reference={trackRef} />
+            <Sponsors reference={sponsorsRef} />
             <FAQSection reference={faqRef} />
             <Footer />
         </div>

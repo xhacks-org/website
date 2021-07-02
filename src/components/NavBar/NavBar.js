@@ -4,7 +4,7 @@ import './NavBar.css';
 import linkedin from './assets/linkedinWhite.svg';
 import instagram from './assets/instagramWhite.svg';
 
-const NavBar = ({ aboutClicked, tracksClicked, faqClicked }) => {
+const NavBar = ({ aboutClicked, tracksClicked, faqClicked, sponsorsClicked }) => {
     return (
         <div className='navBar'>
             <div className="barLeft">

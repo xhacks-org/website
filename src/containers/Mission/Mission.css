@@ -49,9 +49,9 @@
 .content__text{
     font-family: Inter;
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
     letter-spacing: -0.02em;
     width: 650px;
 
