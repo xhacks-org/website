@@ -16,17 +16,6 @@
             "icon": "rookie"
         },
         {
-            "name": "Solo Track",
-            "desc": "For Solo developers since making a project by yourself is tough, but rewarding!",
-            "icon": "solo"
-        },
-        {
-            "name": "Relay Track",
-            "desc": "Compete with other teams on a time-based, relay code track. Only one person can code at a time.",
-            "icon": "relay",
-            "featured": true
-        },
-        {
             "name": "Idea Track",
             "desc": "Submit only a design prototype and idea to get judged. No coding necessary!",
             "icon": "idea"

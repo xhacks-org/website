@@ -21,9 +21,6 @@ const Mission = ({ reference }) => {
                 <img className="content__loveTech" src={bottomLeft} alt='love tech'/>
                 <img className="content__yay" src={bottomRight} alt='yay'/>
             </div>
-            {/* <div className="mission__slides">
-                <Carousel className="slides__carousel" slides={items} autoplay={true} interval={3000}/>
-            </div> */}
         </div>
     )};
 
