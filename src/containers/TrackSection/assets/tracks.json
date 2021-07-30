@@ -1,11 +1,6 @@
 {
     "data": [
         {
-            "name": "Scale Track",
-            "desc": "Improve existing projects and get judged based on the level of improvements made.",
-            "icon": "scale"
-        },
-        {
             "name": "Veteran Track",
             "desc": "Submit a technically complex and impressive project as a hackathon-veteran.",
             "icon": "veteran"
@@ -29,6 +24,11 @@
             "name": "Startup Track",
             "desc": "Submit a product and get judged based on market-fit and startup-readiness.",
             "icon": "startup"
+        },
+        {
+            "name": "Solo Track",
+            "desc": "Compete by yourself against other solo participants. May the best solo developer win!",
+            "icon": "solo"
         },
         {
             "name": "Overall Track",
