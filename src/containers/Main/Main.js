@@ -2,21 +2,10 @@ import React from 'react';
 import likeYou from './assets/likeYou.svg';
 import discord from './assets/devPost.svg';
 import devPost from './assets/discord.svg';
-import ReactTerminalStateless from 'react-terminal-component';
-import { EmulatorState, FileSystem } from 'javascript-terminal';
 
 import '../Main/Main.css';
 
 const Main = () => {
-    const customState = EmulatorState.create({
-        fs: FileSystem.create({
-            '/home': {},
-            '/home/README': { content: 'This is a text file' },
-            '/home/nested/directory': {},
-            '/home/nested/directory/file': { content: 'End of nested directory!' },
-        }),
-    });
-
     return (
         <div className='main'>
             <div className='main__text'>
@@ -59,28 +48,6 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='main__terminal'>
-                <ReactTerminalStateless
-                    clickToFocus={true}
-                    autoFocus={true}
-                    inputStr='👋 Enter a terminal command'
-                    emulatorState={customState}
-                    promptSymbol='>'
-                    theme={{
-                        background: '#000A18',
-                        promptSymbolColor: '#FFFFFF',
-                        commandColor: '#FFFFFF',
-                        outputColor: '#FFFFFF',
-                        errorOutputColor: '#FF3A10',
-                        fontSize: '14px',
-                        spacing: '10px',
-                        fontFamily: 'Inter',
-                        width: '339px',
-                        height: '265px',
-                        borderRadius: '10px',
-                    }}
-                />
             </div>
         </div>
     );
